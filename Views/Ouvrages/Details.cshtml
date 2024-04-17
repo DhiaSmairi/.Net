@@ -1,0 +1,50 @@
+﻿@model TP_Recapitulatif.Models.Ouvrage
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Ouvrage</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Categorie.Nom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Categorie.Nom)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Titre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Titre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Descriptif)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descriptif)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Prix)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Prix)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
